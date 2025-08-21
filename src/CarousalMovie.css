@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+}
+.carousel .slide {
+  background: none !important; /* removes grey background */
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.carousel .slide img {
+  width: 100% !important; /* make image take full width */
+  height: auto !important;
+  object-fit: cover; /* fill space nicely */
+}
+
+.carousel-root {
+  width: 100% !important; /* carousel full width */
+  margin: 0 auto;
+  overflow: hidden; /* hides any extra space */
+}
