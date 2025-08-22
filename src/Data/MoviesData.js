@@ -29,7 +29,7 @@ export const movies = [
     description:
       "A dark psychological journey into the chaotic mind of Gotham’s most infamous villain.",
     rating: 9.1,
-    img: "/images/joker.jpg",
+    img: "/images/j.jpg",
     category: "Trending",
   },
   {
