@@ -11,6 +11,8 @@ import LoginPage from "./Loginpage";
 function App() {
   return (
     <>
+      <link rel="icon" href="/images/F.png"></link>
+      <title>Filmy </title>
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
