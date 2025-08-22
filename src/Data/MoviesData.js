@@ -1,0 +1,223 @@
+export const movies = [
+  {
+    title: "Deadpool",
+    slug: "deadpool",
+    releaseDate: "2025-05-03",
+    movieLength: "2h 15m",
+    description:
+      "Deadpool is back with more chaos, breaking the fourth wall and teaming up with unexpected heroes to save the multiverse.",
+    rating: 8.7,
+    img: "/images/DealPool.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Superman",
+    slug: "Superman",
+    releaseDate: "2025-07-18",
+    movieLength: "2h 30m",
+    description:
+      "The Man of Steel faces a new intergalactic threat while balancing his role as a hero and a symbol of hope for Earth.",
+    rating: 8.5,
+    img: "/images/S25.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Joker",
+    slug: "Joker",
+    releaseDate: "2025-10-04",
+    movieLength: "2h 10m",
+    description:
+      "A dark psychological journey into the chaotic mind of Gotham’s most infamous villain.",
+    rating: 9.1,
+    img: "/images/joker.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Jurassic World ",
+    slug: "Jurassic-World",
+    releaseDate: "2025-06-12",
+    movieLength: "2h 20m",
+    description:
+      "Dinosaurs once again roam freely, forcing humanity to confront the ultimate survival challenge.",
+    rating: 7.9,
+    img: "/images/Jurassic_world.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Lio ",
+    slug: "Lio",
+    releaseDate: "2025-09-10",
+    movieLength: "1h 50m",
+    description:
+      "An animated heartwarming tale of a curious boy named Lio who discovers a hidden magical world.",
+    rating: 7.2,
+    img: "/images/Lio.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Moana 2",
+    slug: "Moana-2",
+    releaseDate: "2025-11-27",
+    movieLength: "1h 55m",
+    description:
+      "Moana returns for a new oceanic journey to discover lands beyond the horizon and save her people once again.",
+    rating: 8.0,
+    img: "/images/Moana2.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Mufasa",
+    slug: "Mufasa",
+    releaseDate: "2025-12-20",
+    movieLength: "2h 5m",
+    description:
+      "A prequel to The Lion King, telling the origin story of Mufasa and his journey to become king.",
+    rating: 8.3,
+    img: "/images/mufasa.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Minecraft",
+    slug: "Minecraft",
+    releaseDate: "2025-04-04",
+    movieLength: "2h 0m",
+    description:
+      "The world’s most popular block-building game comes to life as heroes band together to save their pixelated world.",
+    rating: 7.5,
+    img: "/images/Minecraft.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Final Destination ",
+    slug: "Final-Destination",
+    releaseDate: "2025-08-15",
+    movieLength: "1h 45m",
+    description:
+      "Death has a new plan. A group of strangers cheats fate, only to find that destiny always catches up.",
+    rating: 7.8,
+    img: "/images/Final_destination.jpg",
+    category: "Latest",
+  },
+  // Extra 11 movies ↓
+  {
+    title: "Avatar 3",
+    slug: "Avatar-3",
+    releaseDate: "2025-12-18",
+    movieLength: "3h 0m",
+    description:
+      "Jake Sully and Neytiri continue their fight to protect Pandora against new human threats.",
+    rating: 9.0,
+    img: "/images/A3.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Shrek 5",
+    slug: "Shrek-5",
+    releaseDate: "2025-07-01",
+    movieLength: "1h 40m",
+    description:
+      "Shrek and Donkey return for one last hilarious adventure that changes Far Far Away forever.",
+    rating: 7.9,
+    img: "/images/Shrek5.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Frozen 3",
+    slug: "Frozen-3",
+    releaseDate: "2025-11-20",
+    movieLength: "1h 55m",
+    description:
+      "Elsa and Anna set out on a magical journey to uncover new secrets of Arendelle and beyond.",
+    rating: 8.2,
+    img: "/images/F3.jpg",
+    category: "Latest",
+  },
+  {
+    title: "The Batman 2",
+    slug: "The-Batman-2",
+    releaseDate: "2025-10-15",
+    movieLength: "2h 40m",
+    description:
+      "Batman faces his darkest villain yet in Gotham, testing both his limits and his legacy.",
+    rating: 8.8,
+    img: "/images/B2.jpg",
+    category: "Latest",
+  },
+  {
+    title: "Avengers: Secret Wars",
+    slug: "Avengers-Secret-Wars",
+    releaseDate: "2025-05-02",
+    movieLength: "3h 15m",
+    description:
+      "The multiverse collides as Earth’s mightiest heroes unite against the ultimate cosmic threat.",
+    rating: 9.3,
+    img: "/images/ASW.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Kung Fu Panda 4",
+    slug: "Kung-Fu-Panda-4",
+    releaseDate: "2025-03-10",
+    movieLength: "1h 45m",
+    description:
+      "Po faces a new martial arts master and learns the true meaning of being the Dragon Warrior.",
+    rating: 7.8,
+    img: "/images/KP4.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Toy Story 5",
+    slug: "Toy-Story-5",
+    releaseDate: "2025-06-21",
+    movieLength: "1h 50m",
+    description:
+      "Woody, Buzz, and friends embark on another heartfelt adventure about friendship and belonging.",
+    rating: 8.1,
+    img: "/images/TS5.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Black Panther: Legacy",
+    slug: "Black-Panther-Legacy",
+    releaseDate: "2025-09-05",
+    movieLength: "2h 25m",
+    description:
+      "The legacy of Wakanda continues as a new hero rises to protect the nation from global threats.",
+    rating: 8.6,
+    img: "/images/BPL.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Spider-Man: Beyond Time",
+    slug: "Spider-Man-Beyond-Timey",
+    releaseDate: "2025-08-08",
+    movieLength: "2h 20m",
+    description:
+      "Peter Parker is pulled into a multiversal time war that threatens all realities.",
+    rating: 9.0,
+    img: "/images/SMB.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Inside Out 2",
+    slug: "Inside-Out-2",
+    releaseDate: "2025-06-14",
+    movieLength: "1h 40m",
+    description:
+      "Riley enters her teenage years with new emotions joining the crew inside her mind.",
+    rating: 8.4,
+    img: "/images/io2.jpg",
+    category: "Trending",
+  },
+  {
+    title: "Doctor Strange: Madness Returns",
+    slug: "Doctor-Strange-Madness-Returns",
+    releaseDate: "2025-07-30",
+    movieLength: "2h 25m",
+    description:
+      "Doctor Strange explores darker dimensions as an ancient evil awakens in the multiverse.",
+    rating: 8.7,
+    img: "/images/Ds3.jpg",
+    category: "Trending",
+  },
+];

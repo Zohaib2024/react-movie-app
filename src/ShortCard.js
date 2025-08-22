@@ -2,7 +2,7 @@ import React from "react";
 
 const ShortCard = (props) => {
   return (
-    <div className="w-48 my-5 ">
+    <div className="  ">
       <img src={props.Image} alt="img" />
     </div>
   );

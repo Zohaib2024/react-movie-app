@@ -1,34 +1,52 @@
 import React from "react";
 import CarousalMovies from "./CarousalMovies";
-
 import ShortCard from "./ShortCard";
-
 import Shortheading from "./Shortheading";
-import SiteFooter from "./SiteFooter";
+
+import { movies } from "./Data/MoviesData"; // import dummy data
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
+  const trendingMovies = movies.filter(
+    (movie) => movie.category === "Trending"
+  );
+  const latestMovies = movies.filter((movie) => movie.category === "Latest");
+
   return (
     <>
       <CarousalMovies />
 
-      <Shortheading name="Trending Movies" />
-      <div className="flex gap-5 justify-center items-center w-full">
-        <ShortCard Image="images/DealPool.jpg" />
-        <ShortCard Image="/images/Jurassic_world.jpg" />
-        <ShortCard Image="/images/Joker.jpg" />
-        <ShortCard Image="/images/mufasa.jpg" />
-        <ShortCard Image="images/Nibecraft.jpg" />
-      </div>
-      <Shortheading name="Latest Movies" />
-      <div className="flex gap-5 justify-center items-center w-full">
-        <ShortCard Image="images/DealPool.jpg" />
-        <ShortCard Image="/images/Jurassic_world.jpg" />
-        <ShortCard Image="/images/Joker.jpg" />
-        <ShortCard Image="/images/mufasa.jpg" />
-        <ShortCard Image="images/Nibecraft.jpg" />
-      </div>
+      <div className="flex justify-center flex-col items-center px-4 sm:px-10 lg:px-32">
+        {/* Trending Movies */}
+        <Shortheading name="Trending Movies" />
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-5 w-full">
+          {trendingMovies.slice(0, 5).map((movie, index) => (
+            <Link key={movie.slug} to={`/movies/${movie.slug}`}>
+              <ShortCard
+                key={index}
+                Image={movie.img}
+                title={movie.title}
+                className="w-40 sm:w-48 md:w-52 lg:w-56"
+              />
+            </Link>
+          ))}
+        </div>
 
-      <SiteFooter />
+        {/* Latest Movies */}
+        <Shortheading name="Latest Movies" />
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-5 w-full">
+          {latestMovies.slice(0, 5).map((movie, index) => (
+            <Link key={movie.slug} to={`/movies/${movie.slug}`}>
+              <ShortCard
+                key={index}
+                Image={movie.img}
+                title={movie.title}
+                className="w-40 sm:w-48 md:w-52 lg:w-56"
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
     </>
   );
 };

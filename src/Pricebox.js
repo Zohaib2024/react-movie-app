@@ -1,50 +1,35 @@
 import React from "react";
-import "./pricebox.css";
+import { NavLink } from "react-router-dom";
+
 const Pricebox = (props) => {
   return (
-    <div className="text-white  w-1/2  mt-10 ">
-      {/* <table className="w-[400px] ">
-        <tr className="">
-          <th>{props.plan}</th>
-        </tr>
-        <tr>
-          <td>{props.data}</td>
-        </tr>
-        <tr>
-          <td>{props.price} </td>
-        </tr>
-        <tr>
-          <td>
-            <button className="bg-red-600 w-40 h-8 rounded-md">
-              Subscribe
-            </button>
-          </td>
-        </tr>
-      </table> */}
-      <table class="  w-full ">
+    <div className="w-full max-w-sm mt-10 text-white">
+      <table className="w-full  rounded-lg overflow-hidden ">
         <thead>
           <tr>
-            <th class=" bg-red-600 text-center px-28 py-6 text-2xl">
+            <th className="bg-red-600 text-center text-xl sm:text-2xl py-4">
               {props.plan}
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="border  border-red-600  text-center px-28 py-6  text-2xl  ">
+            <td className="border border-red-600 text-center py-4 text-base sm:text-xl">
               {props.data}
             </td>
           </tr>
           <tr>
-            <td class="border  border-red-600  text-center  px-28 py-6 text-2xl ">
+            <td className="border border-red-600 text-center py-4 text-base sm:text-xl">
               {props.price}
             </td>
           </tr>
           <tr>
-            <td class="border flex justify-center  px-28 py-6  border-red-600 ">
-              <button className="bg-red-600 px-20 py-6 rounded-md">
+            <td className="border border-red-600 text-center py-4 px-24">
+               <NavLink to="/login">
+              <button className="bg-red-600 text-white px-6 py-2 sm:px-10 sm:py-3 rounded-md hover:bg-red-700 transition">
                 Subscribe
               </button>
+              </NavLink> 
             </td>
           </tr>
         </tbody>
