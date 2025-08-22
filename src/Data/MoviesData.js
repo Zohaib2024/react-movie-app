@@ -21,17 +21,17 @@ export const movies = [
     img: "/images/S25.jpg",
     category: "Trending",
   },
-  {
-    title: "Joker",
-    slug: "Joker",
-    releaseDate: "2025-10-04",
-    movieLength: "2h 10m",
-    description:
-      "A dark psychological journey into the chaotic mind of Gotham’s most infamous villain.",
-    rating: 9.1,
-    img: "/images/j.jpg",
-    category: "Trending",
-  },
+  // {
+  //   title: "Joker",
+  //   slug: "Joker",
+  //   releaseDate: "2025-10-04",
+  //   movieLength: "2h 10m",
+  //   description:
+  //     "A dark psychological journey into the chaotic mind of Gotham’s most infamous villain.",
+  //   rating: 9.1,
+  //   img: "/images/j.jpg",
+  //   category: "Trending",
+  // },
   {
     title: "Jurassic World ",
     slug: "Jurassic-World",
